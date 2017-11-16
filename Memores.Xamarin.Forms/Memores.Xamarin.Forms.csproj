@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="Controls\ClickableListView.cs" />
     <Compile Include="Controls\Abstract\IClickableItemsControl.cs" />
+    <Compile Include="Controls\ValidatedEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,6 +6,9 @@ namespace Memores.Xamarin.Forms.Controls {
     public class ClickableListView : ListView, IClickableItemsControl {
         public static BindableProperty ItemClickCommandProperty = BindableProperty.Create<ClickableListView, ICommand>(x => x.ItemClickCommand, null);
 
+        /// <summary>
+        /// Command which will execute when you tapped on item
+        /// </summary>
         public ICommand ItemClickCommand {
             get { return (ICommand) GetValue(ItemClickCommandProperty); }
             set { SetValue(ItemClickCommandProperty, value); }

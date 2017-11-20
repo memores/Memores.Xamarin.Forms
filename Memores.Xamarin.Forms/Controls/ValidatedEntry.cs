@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+using Memores.Xamarin.Forms.Controls.Abstract;
 using Xamarin.Forms;
 
 namespace Memores.Xamarin.Forms.Controls {
-    public class ValidatedEntry : Entry {
+    public class ValidatedEntry : Entry, IValidatedEntry {
         public static BindableProperty RegexPatternProperty = BindableProperty.Create<ValidatedEntry, string>(x => x.RegexPattern, default(string));
 
         public static BindableProperty MatchColorProperty = BindableProperty.Create<ValidatedEntry, Color>(x => x.MatchColor, Color.Default);
@@ -51,3 +48,4 @@ namespace Memores.Xamarin.Forms.Controls {
         }
     }
 }
+
